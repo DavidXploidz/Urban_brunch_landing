@@ -31,7 +31,7 @@
 }
 .bg-glass{
     /* background-color: rgba(255,255,255,0.2); */
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(205, 125, 18,0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
