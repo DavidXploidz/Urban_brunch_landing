@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme{
@@ -15,6 +16,8 @@
     --color-dark: #0a0a0a;
     --color-light: #f8eee4;
     --color-primary: #b86114;
+    --font-montserrat: 'Montserrat' , sans-serif;
+    --font-karla: 'Karla' , sans-serif;
 }
 .overlay{
     position: relative;

@@ -1,15 +1,19 @@
 import Home from "./pages/Home"
 import NavBar from "./components/NavBar"
 import AboutCard from "./components/AboutCard"
+import ProductCard from "./components/ProductCard"
+import data from '../db.json'
+
 function App() {
 
+  const { desayunos_brunch } = data.menu;
 
   return (
     <>
       <NavBar />
       <Home />
       {/* About section */}
-      <section className="bg-gray-50">
+      <section className="bg-gray-50 font-karla">
         <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <AboutCard 
             icon="FaLeaf" 
@@ -29,10 +33,15 @@ function App() {
         </div>
       </section>
       {/* Menu section */}
-      <section className="bg-cafe-100">
+      <section className="bg-cafe-100 font-karla">
         <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
-          <h2 className="text-5xl text-cafe-900 font-bold text-center mb-4">Our Signature Menu</h2>
+          <h2 className="text-5xl text-cafe-900 font-bold text-center mb-4 font-montserrat">Our Signature Menu</h2>
           <p className="text-2xl text-center text-cafe-700 max-w-2xl mx-auto">Discover our carefully curated selection of brunch favorites, artisanal coffee, and seasonal specialties.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6 mt-10">
+            {desayunos_brunch.map((desayuno, index) => (
+              <ProductCard key={index} product={desayuno} />
+            ))}
+          </div>
         </div>
       </section>
     </>
