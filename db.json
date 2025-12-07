@@ -2,128 +2,128 @@
   "menu": {
     "cafe": [
       {
-        "nombre": "Latte Vainilla Ahumada",
-        "descripcion_corta": "Espresso, leche vaporizada y jarabe de vainilla con un toque ahumado.",
+        "nombre": "Smoked Vanilla Latte",
+        "descripcion_corta": "Espresso, steamed milk, and vanilla syrup with a smoked touch.",
         "precio": 4.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Cold Brew Clásico",
-        "descripcion_corta": "Café de infusión fría, suave, dulce y bajo en acidez, servido con hielo.",
+        "nombre": "Classic Cold Brew",
+        "descripcion_corta": "Smooth, sweet, and low-acidity cold-infused coffee, served over ice.",
         "precio": 5.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Cappuccino Doble Shot",
-        "descripcion_corta": "Doble shot de espresso, leche texturizada y una capa generosa de espuma.",
+        "nombre": "Double Shot Cappuccino",
+        "descripcion_corta": "Double shot of espresso, textured milk, and a generous layer of foam.",
         "precio": 4.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Moca de Chocolate Blanco",
-        "descripcion_corta": "Combinación dulce de espresso, leche y chocolate blanco derretido.",
+        "nombre": "White Chocolate Mocha",
+        "descripcion_corta": "Sweet combination of espresso, milk, and melted white chocolate.",
         "precio": 4.75,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Americano de Origen Único",
-        "descripcion_corta": "Shot de espresso diluido con agua caliente, utilizando granos premium.",
+        "nombre": "Single Origin Americano",
+        "descripcion_corta": "Espresso shot diluted with hot water, using premium beans.",
         "precio": 3.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       }
     ],
     "desayunos_brunch": [
       {
-        "nombre": "Tostada de Aguacate 'Urbana'",
-        "descripcion_corta": "Pan artesanal, aguacate machacado, huevo escalfado, chile en hojuelas y semillas de sésamo.",
+        "nombre": "'Urban' Avocado Toast",
+        "descripcion_corta": "Artisan bread, smashed avocado, poached egg, chili flakes, and sesame seeds.",
         "precio": 9.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Waffles de Pollo y Miel",
-        "descripcion_corta": "Waffles crujientes, pollo frito estilo sureño y sirope de miel picante.",
+        "nombre": "Chicken and Honey Waffles",
+        "descripcion_corta": "Crispy waffles, Southern-style fried chicken, and spicy honey syrup.",
         "precio": 12.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Huevos Benedictinos Clásicos",
-        "descripcion_corta": "Muffins ingleses, jamón, huevos escalfados y salsa holandesa casera.",
+        "nombre": "Classic Eggs Benedict",
+        "descripcion_corta": "English muffins, ham, poached eggs, and homemade hollandaise sauce.",
         "precio": 11.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Shakshuka con Feta",
-        "descripcion_corta": "Huevos pochados en salsa de tomate especiada, pimientos y queso feta desmoronado.",
+        "nombre": "Shakshuka with Feta",
+        "descripcion_corta": "Poached eggs in spiced tomato sauce, peppers, and crumbled feta cheese.",
         "precio": 10.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Bowl de Avena con Frutas",
-        "descripcion_corta": "Avena cocida con leche de almendras, cubierta con bayas frescas, nueces y chía.",
+        "nombre": "Fruit Oatmeal Bowl",
+        "descripcion_corta": "Oats cooked with almond milk, topped with fresh berries, nuts, and chia.",
         "precio": 7.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       }
     ],
     "bebidas_frias": [
       {
-        "nombre": "Limonada de Menta Refrescante",
-        "descripcion_corta": "Jugo de limón natural, menta fresca y un toque de azúcar de caña.",
+        "nombre": "Refreshing Mint Lemonade",
+        "descripcion_corta": "Natural lemon juice, fresh mint, and a touch of cane sugar.",
         "precio": 4.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Smoothie Verde 'Detox'",
-        "descripcion_corta": "Espinaca, plátano, manzana, jengibre y jugo de naranja. Alto en vitaminas.",
+        "nombre": "'Detox' Green Smoothie",
+        "descripcion_corta": "Spinach, banana, apple, ginger, and orange juice. High in vitamins.",
         "precio": 6.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Té Helado de Durazno",
-        "descripcion_corta": "Té negro con sabor natural a durazno, servido helado con rodajas de fruta.",
+        "nombre": "Peach Iced Tea",
+        "descripcion_corta": "Black tea with natural peach flavor, served iced with fruit slices.",
         "precio": 3.75,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Matcha Latte Frío",
-        "descripcion_corta": "Polvo de matcha orgánico batido con leche fría y endulzante natural.",
+        "nombre": "Iced Matcha Latte",
+        "descripcion_corta": "Organic matcha powder whisked with cold milk and natural sweetener.",
         "precio": 5.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Jugo de Naranja Recién Exprimido",
-        "descripcion_corta": "Jugo de naranja natural, exprimido al momento. Un clásico del brunch.",
+        "nombre": "Freshly Squeezed Orange Juice",
+        "descripcion_corta": "Natural orange juice, squeezed on the spot. A brunch classic.",
         "precio": 3.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       }
     ],
     "postres": [
       {
-        "nombre": "Roll de Canela Gigante",
-        "descripcion_corta": "Horneado fresco, cubierto con un glaseado de queso crema casero.",
+        "nombre": "Giant Cinnamon Roll",
+        "descripcion_corta": "Freshly baked, topped with a homemade cream cheese glaze.",
         "precio": 4.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Brownie de Chocolate Oscuro",
-        "descripcion_corta": "Denso y fudgy, con trozos de nueces. Servido caliente.",
+        "nombre": "Dark Chocolate Brownie",
+        "descripcion_corta": "Dense and fudgy, with nut pieces. Served warm.",
         "precio": 4.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Cheesecake de Maracuyá",
-        "descripcion_corta": "Cheesecake cremoso con base de galleta y una vibrante salsa de maracuyá.",
+        "nombre": "Passion Fruit Cheesecake",
+        "descripcion_corta": "Creamy cheesecake with a cookie base and a vibrant passion fruit sauce.",
         "precio": 5.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Muffin de Arándanos con Streusel",
-        "descripcion_corta": "Muffin suave con arándanos frescos y cubierta crujiente de streusel de avena.",
+        "nombre": "Blueberry Muffin with Streusel",
+        "descripcion_corta": "Soft muffin with fresh blueberries and a crunchy oat streusel topping.",
         "precio": 3.50,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       },
       {
-        "nombre": "Tarta de Manzana Caliente",
-        "descripcion_corta": "Tarta clásica de manzana con especias, perfecta para acompañar un café.",
+        "nombre": "Warm Apple Pie",
+        "descripcion_corta": "Classic spiced apple pie, perfect to go with a coffee.",
         "precio": 5.00,
         "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
       }

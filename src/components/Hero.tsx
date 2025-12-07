@@ -6,8 +6,8 @@ export default function Hero() {
     <div className="h-full md:h-screen bg-dark overflow-hidden">
         <div className="overlay relative">
             <div className="absolute left-1/2 top-1/2 -translate-1/2 z-10 text-gray-50 space-y-6 text-center">
-                <h1 className="text-5xl lg:text-6xl 2xl:text-7xl font-bold ">Discover the <span className="block">charm Cafe</span></h1>
-                <p className="text-2xl lg:text-3xl text-gray-300 max-w-2xl font-karla">
+                <h1 className="text-4xl lg:text-6xl 2xl:text-8xl font-bold font-satisfy ">Discover the <span className="block">charm Cafe</span></h1>
+                <p className="text-2xl lg:text-3xl text-gray-300 max-w-2xl font-montserrat">
                     Welcome to charm cafe, a modern al elegant restaurant that offers a delightful urban brunch
                 </p>
                 <div className="flex flex-wrap justify-center gap-2 font-karla">
