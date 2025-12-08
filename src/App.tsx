@@ -5,10 +5,42 @@ import ProductCard from "./components/ProductCard"
 import data from '../db.json'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import TestimonialCard from './components/TestimonialCard'
 
 function App() {
 
   const { desayunos_brunch } = data.menu;
+
+  const testimonials = [
+    {
+      id: 1,
+      name: "John Doe",
+      testimonial: "Very delicious brunch, the best I've ever had!, soon I'll be back.",
+      image: "./images/avatar-1.webp",
+      ocupation: "Customer"
+    },
+    {
+      id: 2,
+      name: "John Doe",
+      testimonial: "The brunch was amazing! The food was fresh and the service was great.",
+      image: "./images/avatar-2.webp",
+      ocupation: "Food blogger"
+    },
+    {
+      id: 3,
+      name: "John Doe",
+      testimonial: "The brunch was delicious and the service was great.",
+      image: "./images/avatar-3.webp",
+      ocupation: "Customer"
+    },
+    {
+      id: 4,
+      name: "George Orwell",
+      testimonial: "The place is very clean and the service is great.",
+      image: "./images/avatar-4.webp",
+      ocupation: "Customer"
+    }
+  ]
 
   return (
     <>
@@ -39,11 +71,6 @@ function App() {
         <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
           <h2 className="text-6xl text-cafe-900 font-bold text-center mb-4 font-satisfy">Our Signature Menu</h2>
           <p className="text-2xl text-center text-cafe-700 max-w-2xl mx-auto">Discover our carefully curated selection of brunch favorites, artisanal coffee, and seasonal specialties.</p>
-          {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6 mt-10">
-            {desayunos_brunch.map((desayuno, index) => (
-              <ProductCard key={index} product={desayuno} />
-            ))}
-          </div> */}
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
@@ -120,6 +147,47 @@ function App() {
             <img className="bento-grid__item-5" src="./images/brunch_5.webp" alt="image brunch" />
             <img className="bento-grid__item-6" src="./images/brunch_6.webp" alt="image brunch" />
           </div>
+        </div>
+      </section>
+      {/* Testimonials */}
+      <section className="bg-gray-50 font-karla">
+        <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
+          <h2 className="text-6xl text-cafe-900 font-bold text-center mb-4 font-satisfy">What Our Guests Say</h2>
+          <p className="text-2xl text-center text-cafe-700 max-w-2xl mx-auto">
+            Hear from our wonderful community of food lovers
+          </p>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            autoHeight={true}
+            className="my-14"
+          >
+            {testimonials.map((testimonial, index) => (
+              <SwiperSlide key={index} className="flex justify-center">
+                <TestimonialCard testimonial={testimonial} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
     </>
