@@ -81,6 +81,30 @@ function App() {
           </div>
         </div>
       </section>
+      {/* Our hiatory */}
+      <section className="bg-gray-50 font-karla">
+        <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="space-y-6">
+              <h2 className="text-6xl text-cafe-900 font-bold text-center lg:text-left mb-4 font-satisfy">Our Story</h2>
+              <p className="text-cafe-600 text-xl">
+                Founded in 2018, Brunch & Co began as a dream to create a space where friends and families could gather over exceptional food and coffee. What started as a small neighborhood cafe has grown into a beloved destination for food enthusiasts.
+              </p>
+              <p className="text-cafe-600 text-xl">
+                Our commitment to quality ingredients, innovative recipes, and warm hospitality has made us a cornerstone of the community. Every dish tells a story, and every visit creates a memory.
+              </p>
+              <div className="flex flex-wrap gap-8 text-cafe-600 text-center">
+                <p className="font-semibold text-4xl">5+ <span className="block font-normal text-lg">Years Serving</span></p>
+                <p className="font-semibold text-4xl">50k+ <span className="block font-normal text-lg">Happy Customers</span></p>
+                <p className="font-semibold text-4xl">4.9 <span className="block font-normal text-lg">Star Rating</span></p>
+              </div>
+            </div>
+            <figure>  
+              <img className="rounded-2xl max-h-96 w-full object-cover" src="./images/brunch_1.webp" alt="image brunch" />
+            </figure>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
