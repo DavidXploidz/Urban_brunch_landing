@@ -1,4 +1,5 @@
 import Home from "./pages/Home"
+import { ContactForm } from "./components/ContactForm";
 import NavBar from "./components/NavBar"
 import AboutCard from "./components/AboutCard"
 import ProductCard from "./components/ProductCard"
@@ -9,6 +10,7 @@ import { MdLocationOn, MdLocalPhone, MdAccessTimeFilled } from "react-icons/md";
 import { IoLogoInstagram } from "react-icons/io";
 import { MdFacebook } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
+import BentoGallery from "./components/BentoGallery";
 
 function App() {
 
@@ -121,14 +123,7 @@ function App() {
           <p className="text-2xl text-center text-cafe-700 max-w-2xl mx-auto">
             A glimpse into our beautiful space and delicious creations
           </p>
-          <div className="bento-grid mt-10">
-            <img className="bento-grid__item-1" src="./images/brunch_1.webp" alt="image brunch" />
-            <img className="bento-grid__item-2" src="./images/brunch_2.webp" alt="image brunch" />
-            <img className="bento-grid__item-3" src="./images/brunch_3.webp" alt="image brunch" />
-            <img className="bento-grid__item-4" src="./images/brunch_4.webp" alt="image brunch" />
-            <img className="bento-grid__item-5" src="./images/brunch_5.webp" alt="image brunch" />
-            <img className="bento-grid__item-6" src="./images/brunch_6.webp" alt="image brunch" />
-          </div>
+          <BentoGallery />
         </div>
       </section>
       {/* Testimonials */}
@@ -185,28 +180,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <form className="p-2 md:p-4 lg:p-6 xl:p-8 bg-cafe-700 rounded-xl grid grid-cols-2 items-start gap-4">
-              <h3 className="text-cafe-50 text-3xl font-medium col-span-2">Make a Reservation</h3>
-              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
-                <input className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" type="text" placeholder="Your name" />
-              </fieldset>
-              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
-                <input className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" type="text" placeholder="Email Address" />
-              </fieldset>
-              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
-                <input className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" type="date" />
-              </fieldset>
-              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
-                <select className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" name="" id="">
-                  <option value="1">1 person</option>
-                  <option value="2" selected>2 people</option>
-                </select>
-              </fieldset>
-              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-2">
-                <textarea className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" name="" id="" rows={4} placeholder="Special Request"></textarea>
-              </fieldset>
-              <button className="w-full min-h-14 text-xl font-semibold bg-cafe-600 hover:bg-cafe-900 transition-colors hover:cursor-pointer rounded-lg text-cafe-100 col-span-2 lg:col-span-2">Reserve Table</button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
