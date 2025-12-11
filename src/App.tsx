@@ -48,12 +48,19 @@ function App() {
     }
   ]
 
+  const handleGotoSection = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      <NavBar />
-      <Home />
+      <NavBar handleGotoSection={handleGotoSection}  />
+      <Home id="home" />
       {/* About section */}
-      <section className="bg-gray-50 font-karla">
+      <section id="about" className="bg-gray-50 font-karla">
         <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
           <FadeIn className="grid md:grid-cols-2 lg:grid-cols-3 gap-4" stagger={0.2}>
             <AboutCard
@@ -75,7 +82,7 @@ function App() {
         </div>
       </section>
       {/* Menu section */}
-      <section className="bg-cafe-100 font-karla">
+      <section id="menu" className="bg-cafe-100 font-karla">
         <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
           <FadeIn>
             <h2 className="text-6xl text-cafe-900 font-bold text-center mb-4 font-satisfy">Our Signature Menu</h2>
@@ -98,7 +105,7 @@ function App() {
         </div>
       </section>
       {/* Our hiatory */}
-      <section className="bg-gray-50 font-karla">
+      <section id="history" className="bg-gray-50 font-karla">
         <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
           <FadeIn className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
@@ -159,8 +166,8 @@ function App() {
         </div>
       </section>
       {/* Contact us */}
-      <section className="bg-cafe-900 font-karla">
-        <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
+      <section id="contact" className="bg-cafe-900 font-karla">
+        <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6 overflow-hidden">
           <FadeIn className="grid lg:grid-cols-2 gap-y-8 gap-x-4">
             <div className="text-cafe-50 space-y-6">
               <h2 className="text-6xl font-satisfy">Visit Us Today</h2>

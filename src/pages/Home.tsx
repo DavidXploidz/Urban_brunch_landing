@@ -1,8 +1,8 @@
 import Hero from "../components/Hero"
 
-export default function Home() {
+export default function Home({ id }: { id: string }) {
   return (
-    <div className="bg-light font-montserrat">
+    <div id={id} className="bg-light font-montserrat">
       <Hero />
     </div>
   )

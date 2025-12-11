@@ -24,6 +24,10 @@
     --font-karla: 'Karla' , sans-serif;
     --font-satisfy: 'Satisfy' , sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+}
 .overlay{
     position: relative;
     min-height: inherit;

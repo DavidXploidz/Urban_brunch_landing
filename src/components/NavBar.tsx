@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 
-export default function NavBar() {
+export default function NavBar({ handleGotoSection }: { handleGotoSection: (section: string) => void }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef(null);
@@ -74,10 +74,10 @@ export default function NavBar() {
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex space-x-8 text-xl font-medium text-white/90">
-          <a href="#" className="hover:text-cafe-400 transition-colors">Home</a>
-          <a href="#" className="hover:text-cafe-400 transition-colors">About</a>
-          <a href="#" className="hover:text-cafe-400 transition-colors">Menu</a>
-          <a href="#" className="hover:text-cafe-400 transition-colors">Contact</a>
+          <button onClick={() => handleGotoSection("home")} className="hover:text-cafe-400 transition-colors">Home</button>
+          <button onClick={() => handleGotoSection("about")} className="hover:text-cafe-400 transition-colors">About</button>
+          <button onClick={() => handleGotoSection("menu")} className="hover:text-cafe-400 transition-colors">Menu</button>
+          <button onClick={() => handleGotoSection("contact")} className="hover:text-cafe-400 transition-colors">Contact</button>
         </nav>
 
         {/* HAMBURGER BUTTON */}
