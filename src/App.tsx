@@ -5,6 +5,7 @@ import ProductCard from "./components/ProductCard"
 import data from '../db.json'
 import TestimonialCard from './components/TestimonialCard'
 import SwiperSliderComponent from './components/SwiperSliderComponent'
+import { MdLocationOn, MdLocalPhone, MdAccessTimeFilled } from "react-icons/md";
 
 function App() {
 
@@ -148,6 +149,51 @@ function App() {
               }
             }}
           />
+        </div>
+      </section>
+      {/* Contact us */}
+      <section className="bg-cafe-900 font-karla">
+        <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6">
+          <div className="grid lg:grid-cols-2 gap-y-8 gap-x-4">
+            <div className="text-cafe-50 space-y-6">
+              <h2 className="text-6xl font-satisfy">Visit Us Today</h2>
+              <p className="text-2xl text-cafe-200">Experience the warmth of our cafe and taste the difference quality makes.</p>
+              <div className="flex items-center gap-x-2">
+                <MdLocationOn className="flex-none size-8 text-cafe-200" />
+                <p className="text-xl font-semibold">Address <span className="block font-light text-cafe-200">123 Cafe Street, Downtown District</span></p>
+              </div>
+              <div className="flex items-center gap-x-2">
+                <MdLocalPhone className="flex-none size-8 text-cafe-200" />
+                <p className="text-xl font-semibold">Phone <span className="block font-light text-cafe-200">(555) 123-4567</span></p>
+              </div>
+              <div className="flex items-center gap-x-2">
+                <MdAccessTimeFilled className="flex-none size-8 text-cafe-200" />
+                <p className="text-xl font-semibold">Hours <span className="block font-light text-cafe-200">Mon-Sun: 7:00 AM - 4:00 PM</span></p>
+              </div>
+            </div>
+            <form className="p-2 md:p-4 lg:p-6 xl:p-8 bg-cafe-700 rounded-xl grid grid-cols-2 items-start gap-4">
+              <h3 className="text-cafe-50 text-3xl font-medium col-span-2">Make a Reservation</h3>
+              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
+                <input className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" type="text" placeholder="Your name" />
+              </fieldset>
+              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
+                <input className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" type="text" placeholder="Email Address" />
+              </fieldset>
+              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
+                <input className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" type="date" />
+              </fieldset>
+              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
+                <select className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" name="" id="">
+                  <option value="1">1 person</option>
+                  <option value="2" selected>2 people</option>
+                </select>
+              </fieldset>
+              <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-2">
+                <textarea className="w-full min-h-14 border border-cafe-500 bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl" name="" id="" rows={4} placeholder="Special Request"></textarea>
+              </fieldset>
+              <button className="w-full min-h-14 text-xl font-semibold bg-cafe-600 hover:bg-cafe-900 transition-colors hover:cursor-pointer rounded-lg text-cafe-100 col-span-2 lg:col-span-2">Reserve Table</button>
+            </form>
+          </div>
         </div>
       </section>
     </>
