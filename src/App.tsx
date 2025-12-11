@@ -6,6 +6,9 @@ import data from '../db.json'
 import TestimonialCard from './components/TestimonialCard'
 import SwiperSliderComponent from './components/SwiperSliderComponent'
 import { MdLocationOn, MdLocalPhone, MdAccessTimeFilled } from "react-icons/md";
+import { IoLogoInstagram } from "react-icons/io";
+import { MdFacebook } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
 
 function App() {
 
@@ -170,6 +173,17 @@ function App() {
                 <MdAccessTimeFilled className="flex-none size-8 text-cafe-200" />
                 <p className="text-xl font-semibold">Hours <span className="block font-light text-cafe-200">Mon-Sun: 7:00 AM - 4:00 PM</span></p>
               </div>
+              <div className="flex items-center gap-3">
+                <div className="bg-cafe-400 hover:bg-cafe-500 rounded-full w-10 h-10 grid place-items-center hover:-translate-y-1 transition-transform cursor-pointer">
+                  <IoLogoInstagram className="flex-none size-6" />
+                </div>
+                <div className="bg-cafe-400 hover:bg-cafe-500 rounded-full w-10 h-10 grid place-items-center hover:-translate-y-1 transition-transform cursor-pointer">
+                  <MdFacebook className="flex-none size-6" />
+                </div>
+                <div className="bg-cafe-400 hover:bg-cafe-500 rounded-full w-10 h-10 grid place-items-center hover:-translate-y-1 transition-transform cursor-pointer">
+                  <FaXTwitter className="flex-none size-5" />
+                </div>
+              </div>
             </div>
             <form className="p-2 md:p-4 lg:p-6 xl:p-8 bg-cafe-700 rounded-xl grid grid-cols-2 items-start gap-4">
               <h3 className="text-cafe-50 text-3xl font-medium col-span-2">Make a Reservation</h3>
@@ -196,6 +210,14 @@ function App() {
           </div>
         </div>
       </section>
+      <footer className="bg-cafe-900 font-karla">
+        <div className="py-20 container max-w-7xl mx-auto px-2 md:px-4 lg:px-6 text-center text-cafe-200">
+          <p className="text-3xl text-cafe-50 font-satisfy mb-4">Brunch & Co</p>
+          <p className="text-xl">Where every meal feels like home</p>
+          <hr className="border-cafe-500 my-5" />
+          <p className="text-lg font-montserrat">© 2025 Brunch & Co. All rights reserved.</p>
+        </div>
+      </footer>
     </>
   )
 }
