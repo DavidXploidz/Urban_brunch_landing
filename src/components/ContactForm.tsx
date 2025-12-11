@@ -121,7 +121,7 @@ export const ContactForm = () => {
 
             <fieldset className="flex flex-col gap-y-4 col-span-2 md:col-span-1">
                 <input
-                    className={`w-full min-h-14 border ${errors.date ? 'border-red-500' : 'border-cafe-500'} bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl`} // browser date picker styling is minimal, but background works
+                    className={`w-auto min-h-14 border ${errors.date ? 'border-red-500' : 'border-cafe-500'} bg-cafe-600 px-4 py-2 rounded-lg text-cafe-100 focus:outline-0 text-xl`} // browser date picker styling is minimal, but background works
                     type="date"
                     name="date"
                     value={formData.date}
