@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -6,12 +6,27 @@ import { IoClose } from "react-icons/io5";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const menuRef = useRef(null);
   const linksRef = useRef<HTMLAnchorElement[]>([]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Toggle at 80% of viewport height to be safe/smoother
+      if (window.scrollY > window.innerHeight * 0.8) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useGSAP(() => {
     if (isMenuOpen) {
@@ -52,7 +67,7 @@ export default function NavBar() {
   linksRef.current = [];
 
   return (
-    <div className="bg-glass fixed z-50 w-full min-h-18 lg:min-h-24 transition-all duration-300">
+    <div className={`fixed z-50 w-full min-h-18 lg:min-h-24 transition-all duration-300 ${isScrolled ? 'bg-black/90 shadow-md backdrop-blur-sm' : 'bg-glass'}`}>
       <div className="container mx-auto px-4 md:px-8 lg:px-12 min-h-inherit flex items-center justify-between">
         {/* LOGO */}
         <p className="text-3xl text-cafe-50 font-satisfy relative z-50">Brunch & Co</p>
