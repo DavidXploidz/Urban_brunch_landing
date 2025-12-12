@@ -123,7 +123,7 @@ function App() {
               </div>
             </div>
             <figure>
-              <img className="rounded-2xl max-h-96 w-full object-cover" src="./images/brunch_1.webp" alt="image brunch" />
+              <img className="rounded-2xl max-h-96 w-full object-cover" loading="lazy" width={392} height={248} src="./images/brunch_1.webp" alt="image brunch" />
             </figure>
           </FadeIn>
         </div>

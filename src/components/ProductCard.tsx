@@ -12,7 +12,7 @@ export default function ProductCard( { product } : { product: Product } ) {
 
   return (
     <div className="flex flex-col rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-gray-50 h-full">
-        <img className="max-h-62 object-cover h-auto" src={product.imagen_comida} alt={`image product ${product.nombre}`} />
+        <img className="max-h-62 object-cover h-auto" loading="lazy" width={392} height={248} src={product.imagen_comida} alt={`image product ${product.nombre}`} />
         <div className="p-4 flex flex-col gap-y-2 h-full">
             <h3 className="text-xl text-cafe-900 font-semibold font-montserrat">{product.nombre}</h3>
             <p className="text-lg font-normal text-cafe-600 line-clamp-3">{product.descripcion_corta}</p>

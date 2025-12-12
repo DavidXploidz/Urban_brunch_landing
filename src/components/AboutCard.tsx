@@ -26,7 +26,7 @@ export default function AboutCard( { icon, title, description } : Card ) {
             <div className="w-14 h-14 grid place-items-center rounded-full bg-cafe-100 mb-6">
                 <IconComponent className="flex-none text-cafe-700 size-7" />
             </div>
-            <h3 className="text-2xl text-cafe-900 font-semibold font-montserrat">{title}</h3>
+            <h2 className="text-2xl text-cafe-900 font-semibold font-montserrat">{title}</h2>
             <p className="text-xl font-medium text-cafe-600">{description}</p>
         </div>
     )

@@ -105,6 +105,7 @@ export const ContactForm = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    aria-label='Your name'
                 />
             </fieldset>
 
@@ -116,6 +117,7 @@ export const ContactForm = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    aria-label='Email Address'
                 />
             </fieldset>
 
@@ -126,6 +128,7 @@ export const ContactForm = () => {
                     name="date"
                     value={formData.date}
                     onChange={handleChange}
+                    aria-label='Date'
                 />
             </fieldset>
 
@@ -135,6 +138,7 @@ export const ContactForm = () => {
                     name="people"
                     value={formData.people}
                     onChange={handleChange}
+                    aria-label='People'
                 >
                     <option value="1">1 person</option>
                     <option value="2">2 people</option>
@@ -152,6 +156,7 @@ export const ContactForm = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
+                    aria-label='Special Request'
                 ></textarea>
             </fieldset>
 
