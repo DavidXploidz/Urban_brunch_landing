@@ -99,7 +99,7 @@ function App() {
               }}
             />
             <div className="flex justify-center mt-10">
-              <button className="bg-primary rounded-full text-cafe-50 px-5 py-3 font-semibold text-xl hover:bg-primary/90 transition-colors hover:cursor-pointer">View Full Menu</button>
+              <button className="bg-primary rounded-full text-cafe-50 px-5 py-3 font-semibold text-xl hover:bg-primary/90 transition-colors hover:cursor-not-allowed">View Full Menu</button>
             </div>
           </FadeIn>
         </div>

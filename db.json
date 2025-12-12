@@ -43,25 +43,25 @@
         "nombre": "Chicken and Honey Waffles",
         "descripcion_corta": "Crispy waffles, Southern-style fried chicken, and spicy honey syrup.",
         "precio": 12.00,
-        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
+        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765559299/Urban_Brunch/pexels-bon-appetit-2097728995-31706934_xpqr7j.webp"
       },
       {
         "nombre": "Classic Eggs Benedict",
         "descripcion_corta": "English muffins, ham, poached eggs, and homemade hollandaise sauce.",
         "precio": 11.00,
-        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
+        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765559435/Urban_Brunch/pexels-brettjordan-2297961_gp45hy.webp"
       },
       {
         "nombre": "Shakshuka with Feta",
         "descripcion_corta": "Poached eggs in spiced tomato sauce, peppers, and crumbled feta cheese.",
         "precio": 10.50,
-        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
+        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765559662/Urban_Brunch/pexels-daniela-elena-tentis-118658-1213710_yiqgym.webp"
       },
       {
         "nombre": "Fruit Oatmeal Bowl",
         "descripcion_corta": "Oats cooked with almond milk, topped with fresh berries, nuts, and chia.",
         "precio": 7.50,
-        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765089710/Avocado_toast_ewhvkx.png"
+        "imagen_comida": "https://res.cloudinary.com/dypooembo/image/upload/v1765559858/Urban_Brunch/pexels-luis-felipe-perez-817377805-19453404_tlayd8.webp"
       }
     ],
     "bebidas_frias": [
